@@ -75,5 +75,6 @@
   "rating": "Rating: ",
   "hours": "hours",
   "matchesPlayed": "Matches played",
-  "featuredPros": "Featured Pros"
+  "featuredPros": "Featured Pros",
+  "allPros": "All Pros"
 }

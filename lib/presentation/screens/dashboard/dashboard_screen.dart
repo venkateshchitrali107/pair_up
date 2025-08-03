@@ -35,7 +35,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
           padding: EdgeInsets.all(Sizes.dimen_16.h),
           child: Column(
             children: [
-              SizedBox(height: Sizes.dimen_8.h),
               const DashboardAppHeader(),
               SizedBox(height: Sizes.dimen_8.h),
               CategoryAndSearchSection(
@@ -57,6 +56,15 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 featuredPlayers: ProPlayer.mockPlayers.take(6).toList(),
                 onSeeAllTap: () {
                   debugPrint('See all featured pros tapped');
+                },
+              ),
+
+              SizedBox(height: Sizes.dimen_8.h),
+
+              AllProsSection(
+                allPlayers: ProPlayer.mockPlayers,
+                onSeeAllTap: () {
+                  debugPrint('See all pros tapped');
                 },
               ),
 

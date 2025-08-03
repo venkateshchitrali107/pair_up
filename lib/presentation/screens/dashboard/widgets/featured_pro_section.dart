@@ -19,9 +19,20 @@ class FeaturedProSection extends StatelessWidget {
     this.onSeeAllTap,
   });
 
+  List<ProPlayer> _getRandomFeaturedPlayers() {
+    if (featuredPlayers.isEmpty) return [];
+
+    final shuffledPlayers = List<ProPlayer>.from(featuredPlayers);
+    shuffledPlayers.shuffle();
+
+    return shuffledPlayers.take(9).toList();
+  }
+
   @override
   Widget build(BuildContext context) {
-    if (featuredPlayers.isEmpty) {
+    final randomFeaturedPlayers = _getRandomFeaturedPlayers();
+
+    if (randomFeaturedPlayers.isEmpty) {
       return const SizedBox.shrink();
     }
 
@@ -70,12 +81,11 @@ class FeaturedProSection extends StatelessWidget {
           height: Sizes.dimen_190.h,
           child: ListView.separated(
             scrollDirection: Axis.horizontal,
-
-            itemCount: featuredPlayers.length,
+            itemCount: randomFeaturedPlayers.length,
             separatorBuilder:
                 (context, index) => SizedBox(width: Sizes.dimen_8.w),
             itemBuilder: (context, index) {
-              final player = featuredPlayers[index];
+              final player = randomFeaturedPlayers[index];
               return FeaturedProCard(
                 player: player,
                 onTap: () {

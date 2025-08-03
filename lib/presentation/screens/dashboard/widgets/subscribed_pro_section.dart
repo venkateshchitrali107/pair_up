@@ -19,12 +19,23 @@ class SubscribedProSection extends StatelessWidget {
     this.onSeeAllTap,
   });
 
-  @override
-  Widget build(BuildContext context) {
+  List<ProPlayer> _getRandomSubscribedPlayers() {
     final subscribedProPlayers =
         subscribedPlayers.where((player) => player.isSubscribed).toList();
 
-    if (subscribedProPlayers.isEmpty) {
+    if (subscribedProPlayers.isEmpty) return [];
+
+    final shuffledPlayers = List<ProPlayer>.from(subscribedProPlayers);
+    shuffledPlayers.shuffle();
+
+    return shuffledPlayers.take(9).toList();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final randomSubscribedPlayers = _getRandomSubscribedPlayers();
+
+    if (randomSubscribedPlayers.isEmpty) {
       return const SizedBox.shrink();
     }
 
@@ -73,11 +84,11 @@ class SubscribedProSection extends StatelessWidget {
           height: Sizes.dimen_86.h,
           child: ListView.separated(
             scrollDirection: Axis.horizontal,
-            itemCount: subscribedProPlayers.length,
+            itemCount: randomSubscribedPlayers.length,
             separatorBuilder:
                 (context, index) => SizedBox(width: Sizes.dimen_6.w),
             itemBuilder: (context, index) {
-              final player = subscribedProPlayers[index];
+              final player = randomSubscribedPlayers[index];
               return ProPlayerCard(
                 player: player,
                 onTap: () {
