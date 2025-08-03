@@ -96,3 +96,12 @@ For support and questions, please reach out to [venkateshchitrali107@gmail.com](
 ---
 
 **Built with ❤️ using Flutter**
+
+Demo recording
+
+https://github.com/user-attachments/assets/b8d2aeb7-71fa-4e3d-8ef8-c4f2c9bd8f42
+
+Demo APK
+
+[app-release.apk.zip](https://github.com/user-attachments/files/21567463/app-release.apk.zip)
+
