@@ -42,5 +42,11 @@
   "addDetails": "Add Details",
   "premadeTem": "Premade Template",
   "selectSport": "Seleccionar Deporte",
-  "selectPlayType": "Select Play Type"
+  "selectPlayType": "Select Play Type",
+  "selectMatchType": "Seleccionar Tipo de Partido",
+  "friendly": "Amistoso",
+  "match": "Partido",
+  "league": "Liga",
+  "enterLocation": "Ingresar ubicación",
+  "selectDate": "Seleccionar fecha"
 }

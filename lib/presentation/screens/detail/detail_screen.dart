@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../utils/constants/size.dart';
 import '../../themes/app_colors.dart';
 import 'widgets/detail_header.dart';
+import 'widgets/match_type_section.dart';
 import 'widgets/play_type_header.dart';
 import 'widgets/players_section.dart';
 import 'widgets/sports_header.dart';
@@ -35,6 +36,8 @@ class _State extends State<DetailScreen> {
                     const PlayTypeHeader(),
                     SizedBox(height: Sizes.dimen_12.h),
                     const PlayersSection(),
+                    SizedBox(height: Sizes.dimen_12.h),
+                    const MatchTypeSection(),
                   ],
                 ),
               ),
