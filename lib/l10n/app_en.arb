@@ -92,5 +92,9 @@
   "tabPairUp": "Pair Up",
   "tabCup": "Cup",
   "tabEvents": "Events",
-  "tabRevote": "Revote"
+  "tabRevote": "Revote",
+  "addDetails": "Add Details",
+  "premadeTem": "Premade Template",
+  "selectSport": "Select Sport",
+  "selectPlayType": "Select Play Type"
 }

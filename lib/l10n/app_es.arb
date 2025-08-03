@@ -38,5 +38,9 @@
   "tabPairUp": "Emparejar",
   "tabCup": "Copa",
   "tabEvents": "Eventos",
-  "tabRevote": "Revotar"
+  "tabRevote": "Revotar",
+  "addDetails": "Add Details",
+  "premadeTem": "Premade Template",
+  "selectSport": "Seleccionar Deporte",
+  "selectPlayType": "Select Play Type"
 }
