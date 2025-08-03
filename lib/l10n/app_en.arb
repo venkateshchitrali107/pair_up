@@ -44,5 +44,25 @@
   "learnFromTheBest": "Learn from the Best",
   "@learnFromTheBest": {
     "description": "Alternative tagline"
+  },
+  "tennis": "Tennis",
+  "@tennis": {
+    "description": "Tennis sport category"
+  },
+  "badminton": "Badminton",
+  "@badminton": {
+    "description": "Badminton sport category"
+  },
+  "tableTennis": "Table Tennis",
+  "@tableTennis": {
+    "description": "Table Tennis sport category"
+  },
+  "viewRecording": "View Recording",
+  "@viewRecording": {
+    "description": "View recording option"
+  },
+  "search": "Search",
+  "@search": {
+    "description": "Search placeholder text"
   }
 }

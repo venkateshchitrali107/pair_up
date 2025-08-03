@@ -9,10 +9,11 @@ class AppColors {
   static const Color textPrimary = Color(0xFF111E26);
 
   // Border Colors
-  static const Color cardBorder = Color(0xFF87888E);
+  static const Color cardBorder = Color(0xFFCCCCCC);
 
   // Icon Background Colors
   static const Color appbarIconBg = Color(0xFFF9F9F9);
+  static const Color secondaryTextColor = Color(0xFF87888E);
 
   // Basic Colors
   static const Color white = Color(0xFFFFFFFF);

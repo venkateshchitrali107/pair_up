@@ -31,4 +31,5 @@ class AssetsConstants {
   static const String pickleball = 'assets/icons/pickleball.svg';
   static const String revote = 'assets/icons/revote.svg';
   static const String star = 'assets/icons/star.svg';
+  static const String cameraSquare = 'assets/icons/camera_square.svg';
 }
