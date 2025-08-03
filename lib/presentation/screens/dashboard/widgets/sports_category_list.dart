@@ -29,7 +29,7 @@ class SportsCategoryList extends StatelessWidget {
             padding: EdgeInsets.only(
               right:
                   index < SportCategory.availableCategories.length - 1
-                      ? Sizes.dimen_10.w
+                      ? Sizes.dimen_4.w
                       : 0,
             ),
             child: SportsCategoryChip(

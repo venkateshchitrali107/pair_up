@@ -22,6 +22,7 @@ class DashboardAppHeader extends StatelessWidget {
                 context.loc.selectAPro,
                 style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                   fontWeight: FontWeight.w700,
+                  fontSize: 18,
                   color: AppColors.textPrimary,
                 ),
               ),
@@ -30,6 +31,7 @@ class DashboardAppHeader extends StatelessWidget {
                 context.loc.chooseYourDesiredPro,
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                   color: AppColors.secondaryTextColor,
+                  fontSize: 12.sp,
                   fontWeight: FontWeight.w400,
                 ),
               ),

@@ -5,3 +5,5 @@ export 'sports_category_chip.dart';
 export 'dashboard_app_header.dart';
 export 'sports_category_list.dart';
 export 'profile_icon_widget.dart';
+export 'pro_player_card.dart';
+export 'subscribed_pro_section.dart';

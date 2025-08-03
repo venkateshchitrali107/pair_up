@@ -21,7 +21,7 @@ class CategoryAndSearchSection extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         SizedBox(
-          width: 0.6.sw,
+          width: 0.55.sw,
           child: SportsCategoryList(
             selectedIndex: selectedCategoryIndex,
             onCategorySelected: onCategorySelected,

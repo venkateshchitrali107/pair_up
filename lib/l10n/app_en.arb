@@ -64,5 +64,9 @@
   "search": "Search",
   "@search": {
     "description": "Search placeholder text"
+  },
+  "subscribedPro": "Subscribed Pro",
+  "@subscribedPro": {
+    "description": "Title for subscribed pro players section"
   }
 }

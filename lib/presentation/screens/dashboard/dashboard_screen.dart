@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../domain/entities/pro_player.dart';
 import '../../../domain/entities/sport_category.dart';
 import '../../../utils/constants/size.dart';
 import '../../themes/app_colors.dart';
@@ -35,13 +36,23 @@ class _DashboardScreenState extends State<DashboardScreen> {
           padding: EdgeInsets.all(Sizes.dimen_16.h),
           child: Column(
             children: [
+              SizedBox(height: Sizes.dimen_8.h),
               const DashboardAppHeader(),
-              SizedBox(height: Sizes.dimen_32.h),
+              SizedBox(height: Sizes.dimen_16.h),
               CategoryAndSearchSection(
                 selectedCategoryIndex: selectedChipIndex,
                 onCategorySelected: _onCategorySelected,
               ),
-              SizedBox(height: Sizes.dimen_24.h),
+              SizedBox(height: Sizes.dimen_16.h),
+
+              SubscribedProSection(
+                subscribedPlayers: ProPlayer.mockPlayers,
+                onSeeAllTap: () {
+                  debugPrint('See all subscribed pros tapped');
+                },
+              ),
+
+              SizedBox(height: Sizes.dimen_16.h),
             ],
           ),
         ),

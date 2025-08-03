@@ -86,6 +86,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                 hintText: context.loc.search,
                 hintStyle: Theme.of(context).textTheme.bodyMedium?.copyWith(
                   color: AppColors.secondaryTextColor,
+                  fontSize: 14.sp,
                   fontWeight: FontWeight.w500,
                 ),
                 border: InputBorder.none,
@@ -93,6 +94,7 @@ class _SearchWidgetState extends State<SearchWidget> {
               ),
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                 color: AppColors.textPrimary,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.w400,
               ),
             ),

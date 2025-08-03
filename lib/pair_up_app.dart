@@ -20,9 +20,9 @@ class PairUpApp extends StatelessWidget {
       builder: (context, orientation) {
         final screenWidth = MediaQuery.of(context).size.width;
         double designWidth =
-            (kIsWeb && screenWidth >= 800) ? Sizes.dimen_1920 : Sizes.dimen_402;
+            (kIsWeb && screenWidth >= 800) ? Sizes.dimen_1920 : Sizes.dimen_375;
         double designHeight =
-            (kIsWeb && screenWidth >= 800) ? Sizes.dimen_1080 : Sizes.dimen_874;
+            (kIsWeb && screenWidth >= 800) ? Sizes.dimen_1080 : Sizes.dimen_667;
         return ScreenUtilInit(
           designSize:
               orientation == Orientation.portrait

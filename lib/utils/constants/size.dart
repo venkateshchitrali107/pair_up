@@ -46,6 +46,8 @@ class Sizes {
   static const double dimen_80 = 80.0;
   static const double dimen_84 = 84.0;
   static const double dimen_85 = 85.0;
+  static const double dimen_86 = 86.0;
+  static const double dimen_90 = 90.0;
   static const double dimen_96 = 96.0;
   static const double dimen_100 = 100.0;
   static const double dimen_108 = 108.0;

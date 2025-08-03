@@ -61,6 +61,7 @@ class SportsCategoryChip extends StatelessWidget {
         style:
             Theme.of(context).textTheme.bodyMedium?.copyWith(
               color: AppColors.white,
+              fontSize: 14.sp,
               fontWeight: FontWeight.w600,
             ) ??
             const TextStyle(),
