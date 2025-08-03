@@ -5,6 +5,8 @@ import '../../../utils/constants/size.dart';
 import '../../themes/app_colors.dart';
 import 'widgets/detail_header.dart';
 import 'widgets/match_type_section.dart';
+import 'widgets/mental_goals_section.dart';
+import 'widgets/physical_goals_section.dart';
 import 'widgets/play_type_header.dart';
 import 'widgets/players_section.dart';
 import 'widgets/sports_header.dart';
@@ -38,6 +40,10 @@ class _State extends State<DetailScreen> {
                     const PlayersSection(),
                     SizedBox(height: Sizes.dimen_12.h),
                     const MatchTypeSection(),
+                    SizedBox(height: Sizes.dimen_12.h),
+                    const PhysicalGoalsSection(),
+                    SizedBox(height: Sizes.dimen_12.h),
+                    const MentalGoalsSection(),
                   ],
                 ),
               ),

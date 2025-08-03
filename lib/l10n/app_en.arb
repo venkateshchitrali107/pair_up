@@ -102,5 +102,13 @@
   "match": "Match",
   "league": "League",
   "enterLocation": "Enter location",
-  "selectDate": "Select date"
+  "selectDate": "Select date",
+  
+  "physicalGoals": "Physical Goals",
+  "physicalGoalsSubtitle": "Consider a checklist for your Physical Goals to track your performance!",
+  "playerLevelInfo": "Whether you're a beginner, intermediate or advanced, we'll try and match you with players of a similar level.",
+  "mentalGoals": "Mental Goals",
+  "mentalGoalsSubtitle": "Consider a checklist for your Mental Goals to track your performance!",
+  "addAGoal": "Add a goal",
+  "save": "Save"
 }

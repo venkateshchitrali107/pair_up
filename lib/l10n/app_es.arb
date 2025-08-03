@@ -48,5 +48,12 @@
   "match": "Partido",
   "league": "Liga",
   "enterLocation": "Ingresar ubicación",
-  "selectDate": "Seleccionar fecha"
+  "selectDate": "Seleccionar fecha",
+  "physicalGoals": "Objetivos Físicos",
+  "physicalGoalsSubtitle": "¡Considera una lista de verificación para tus Objetivos Físicos para seguir tu rendimiento!",
+  "playerLevelInfo": "Ya seas principiante, intermedio o avanzado, intentaremos emparejarte con jugadores de un nivel similar.",
+ "mentalGoals": "Objetivos Mentales",
+  "mentalGoalsSubtitle": "¡Considera una lista de verificación para tus Objetivos Mentales para seguir tu rendimiento!",
+  "addAGoal": "Añadir un objetivo",
+  "save": "Guardar"
 }

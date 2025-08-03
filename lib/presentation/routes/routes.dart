@@ -25,7 +25,7 @@ class Routes {
       GoRoute(
         path: dashboardScreen,
         name: dashboardScreen,
-        builder: (context, state) => const DetailScreen(),
+        builder: (context, state) => const DashboardScreen(),
       ),
       GoRoute(
         path: Routes.detailScreen,

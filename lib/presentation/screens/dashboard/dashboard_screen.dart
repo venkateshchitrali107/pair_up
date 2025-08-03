@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../domain/entities/pro_player.dart';
 import '../../../domain/entities/sport_category.dart';
 import '../../../utils/constants/size.dart';
+import '../../routes/routes.dart';
 import '../../themes/app_colors.dart';
 import 'widgets/dashboard_widgets.dart';
 
@@ -57,7 +59,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     SubscribedProSection(
                       subscribedPlayers: ProPlayer.mockPlayers,
                       onSeeAllTap: () {
-                        debugPrint('See all subscribed pros tapped');
+                        context.pushNamed(Routes.detailScreen);
                       },
                     ),
 
