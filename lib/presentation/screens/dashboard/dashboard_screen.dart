@@ -22,7 +22,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
       selectedChipIndex = index;
     });
 
-    // Handle category selection logic here
     final selectedCategory = SportCategory.availableCategories[index];
     debugPrint('Selected category: ${selectedCategory.type}');
   }
@@ -32,23 +31,32 @@ class _DashboardScreenState extends State<DashboardScreen> {
     return Scaffold(
       backgroundColor: AppColors.white,
       body: SafeArea(
-        child: Padding(
+        child: SingleChildScrollView(
           padding: EdgeInsets.all(Sizes.dimen_16.h),
           child: Column(
             children: [
               SizedBox(height: Sizes.dimen_8.h),
               const DashboardAppHeader(),
-              SizedBox(height: Sizes.dimen_16.h),
+              SizedBox(height: Sizes.dimen_8.h),
               CategoryAndSearchSection(
                 selectedCategoryIndex: selectedChipIndex,
                 onCategorySelected: _onCategorySelected,
               ),
-              SizedBox(height: Sizes.dimen_16.h),
+              SizedBox(height: Sizes.dimen_8.h),
 
               SubscribedProSection(
                 subscribedPlayers: ProPlayer.mockPlayers,
                 onSeeAllTap: () {
                   debugPrint('See all subscribed pros tapped');
+                },
+              ),
+
+              SizedBox(height: Sizes.dimen_8.h),
+
+              FeaturedProSection(
+                featuredPlayers: ProPlayer.mockPlayers.take(6).toList(),
+                onSeeAllTap: () {
+                  debugPrint('See all featured pros tapped');
                 },
               ),
 

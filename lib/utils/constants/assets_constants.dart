@@ -1,11 +1,8 @@
 class AssetsConstants {
-  // Private constructor to prevent instantiation
   AssetsConstants._();
 
-  // App Logo
   static const String appLogo = 'assets/app_logo.png';
 
-  // Images
   static const String profileImage = 'assets/images/1.jpg';
   static const String image1 = 'assets/images/1.jpg';
   static const String image2 = 'assets/images/2.jpg';
@@ -17,7 +14,6 @@ class AssetsConstants {
   static const String image8 = 'assets/images/8.jpg';
   static const String image9 = 'assets/images/9.jpg';
 
-  // Icons (SVG)
   static const String arrowLeft = 'assets/icons/arrow_left.svg';
   static const String arrowRightUp = 'assets/icons/arrow_right_up.svg';
   static const String bellBing = 'assets/icons/bell_bing.svg';
@@ -31,5 +27,6 @@ class AssetsConstants {
   static const String pickleball = 'assets/icons/pickleball.svg';
   static const String revote = 'assets/icons/revote.svg';
   static const String star = 'assets/icons/star.svg';
+  static const String starPng = 'assets/icons/star.png';
   static const String cameraSquare = 'assets/icons/camera_square.svg';
 }

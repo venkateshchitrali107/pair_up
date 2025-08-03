@@ -14,5 +14,12 @@
   "tableTennis": "Tenis de Mesa",
   "viewRecording": "Ver Grabación",
   "search": "Buscar",
-  "subscribedPro": "Pro Suscrito"
+  "subscribedPro": "Pro Suscrito",
+  "topOfTheWeek": "Lo mejor de la semana",
+  "subscribed": "Suscrito",
+  "atpRanking": "ATP: ",
+  "rating": "Calificación: ",
+  "hours": "horas",
+  "matchesPlayed": "Partidos jugados",
+  "featuredPros": "Pros Destacados"
 }

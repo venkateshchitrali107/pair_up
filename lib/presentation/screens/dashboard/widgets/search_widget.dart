@@ -61,9 +61,7 @@ class _SearchWidgetState extends State<SearchWidget> {
           Expanded(
             child: TextField(
               controller: _searchController,
-              onChanged: (value) {
-                // Handle search logic here
-              },
+              onChanged: (value) {},
               onTap: () {
                 setState(() {
                   _isSearchFocused = true;
@@ -80,7 +78,6 @@ class _SearchWidgetState extends State<SearchWidget> {
                   _isSearchFocused = false;
                 });
                 FocusScope.of(context).unfocus();
-                // Handle search submission
               },
               decoration: InputDecoration(
                 hintText: context.loc.search,
@@ -100,7 +97,6 @@ class _SearchWidgetState extends State<SearchWidget> {
             ),
           ),
 
-          // Clear button (only show when there's text)
           AnimatedSwitcher(
             duration: const Duration(milliseconds: 200),
             child:

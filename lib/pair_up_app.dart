@@ -43,10 +43,7 @@ class PairUpApp extends StatelessWidget {
                     GlobalWidgetsLocalizations.delegate,
                     GlobalCupertinoLocalizations.delegate,
                   ],
-                  supportedLocales: const [
-                    Locale('en', ''), // English
-                    Locale('es', ''), // Spanish
-                  ],
+                  supportedLocales: const [Locale('en', ''), Locale('es', '')],
                   theme:
                       state.isDarkMode ? ThemeData.dark() : ThemeData.light(),
                   routerDelegate: Routes.router.routerDelegate,

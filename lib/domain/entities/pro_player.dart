@@ -8,6 +8,7 @@ class ProPlayer {
   final int atpRanking;
   final bool isSubscribed;
   final int videosLeft;
+  final double rating;
 
   const ProPlayer({
     required this.id,
@@ -17,6 +18,7 @@ class ProPlayer {
     required this.atpRanking,
     required this.isSubscribed,
     this.videosLeft = 0,
+    this.rating = 4.5,
   });
 
   static const List<ProPlayer> mockPlayers = [
@@ -28,6 +30,7 @@ class ProPlayer {
       atpRanking: 850,
       isSubscribed: true,
       videosLeft: 3,
+      rating: 4.8,
     ),
     ProPlayer(
       id: '2',
@@ -36,6 +39,7 @@ class ProPlayer {
       specialty: 'Serve & Volley Expert',
       atpRanking: 245,
       isSubscribed: false,
+      rating: 4.6,
     ),
     ProPlayer(
       id: '3',
@@ -45,6 +49,7 @@ class ProPlayer {
       atpRanking: 120,
       isSubscribed: true,
       videosLeft: 5,
+      rating: 4.9,
     ),
     ProPlayer(
       id: '4',
@@ -54,6 +59,7 @@ class ProPlayer {
       atpRanking: 89,
       isSubscribed: true,
       videosLeft: 2,
+      rating: 4.7,
     ),
     ProPlayer(
       id: '5',
@@ -62,6 +68,7 @@ class ProPlayer {
       specialty: 'Clay Court Expert',
       atpRanking: 156,
       isSubscribed: false,
+      rating: 4.4,
     ),
     ProPlayer(
       id: '6',
@@ -71,6 +78,7 @@ class ProPlayer {
       atpRanking: 67,
       isSubscribed: true,
       videosLeft: 8,
+      rating: 4.9,
     ),
     ProPlayer(
       id: '7',
@@ -79,6 +87,7 @@ class ProPlayer {
       specialty: 'Drop Shot Master',
       atpRanking: 203,
       isSubscribed: false,
+      rating: 4.3,
     ),
     ProPlayer(
       id: '8',
@@ -88,6 +97,7 @@ class ProPlayer {
       atpRanking: 45,
       isSubscribed: true,
       videosLeft: 1,
+      rating: 4.8,
     ),
     ProPlayer(
       id: '9',
@@ -96,6 +106,7 @@ class ProPlayer {
       specialty: 'Power Baseline Player',
       atpRanking: 312,
       isSubscribed: false,
+      rating: 4.2,
     ),
     ProPlayer(
       id: '10',
@@ -105,6 +116,7 @@ class ProPlayer {
       atpRanking: 78,
       isSubscribed: true,
       videosLeft: 4,
+      rating: 4.7,
     ),
   ];
 }

@@ -7,7 +7,6 @@ import '../screens/dashboard/dashboard_screen.dart';
 final navigatorKey = GlobalKey<NavigatorState>();
 
 class Routes {
-  /// Route name constants
   static const String splashScreen = '/';
   static const String dashboardScreen = '/dashboard';
 

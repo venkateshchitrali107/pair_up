@@ -41,7 +41,6 @@ class SportsCategoryChip extends StatelessWidget {
     );
   }
 
-  // Selected chip: rounded rectangle with label
   Widget _buildSelectedChip(BuildContext context) {
     return AnimatedContainer(
       key: DashboardAnimationConstants.selectedChipKey,
@@ -70,7 +69,6 @@ class SportsCategoryChip extends StatelessWidget {
     );
   }
 
-  // Unselected chip: circular with icon
   Widget _buildUnselectedChip(BuildContext context) {
     return AnimatedContainer(
       key: DashboardAnimationConstants.unselectedChipKey,
@@ -92,7 +90,6 @@ class SportsCategoryChip extends StatelessWidget {
     );
   }
 
-  // Helper method to build icon
   Widget _buildIcon() {
     if (icon != null) {
       return SvgPicture.asset(

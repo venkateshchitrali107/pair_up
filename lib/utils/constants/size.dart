@@ -61,6 +61,7 @@ class Sizes {
   static const double dimen_160 = 160.0;
   static const double dimen_170 = 170.0;
   static const double dimen_180 = 180.0;
+  static const double dimen_190 = 190.0;
   static const double dimen_200 = 200.0;
   static const double dimen_220 = 220.0;
   static const double dimen_254 = 254.0;
@@ -74,12 +75,10 @@ class Sizes {
   static const double dimen_500 = 500.0;
   static const double dimen_600 = 600.0;
 
-  /// Design Screen Resolution Width
   static const double dimen_375 = 375.0;
   static const double dimen_402 = 402.0;
   static const double dimen_1920 = 1920.0;
 
-  /// Design Screen Resolution Height
   static const double dimen_667 = 667.0;
   static const double dimen_874 = 874.0;
   static const double dimen_1080 = 1080.0;

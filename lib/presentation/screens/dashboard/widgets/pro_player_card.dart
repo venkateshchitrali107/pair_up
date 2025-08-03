@@ -145,7 +145,6 @@ class ProPlayerCard extends StatelessWidget {
                     SizedBox(height: Sizes.dimen_4.h),
                   ],
 
-                  // Specialty
                   Text(
                     player.specialty,
                     style: Theme.of(context).textTheme.bodyLarge?.copyWith(

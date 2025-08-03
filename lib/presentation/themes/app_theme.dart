@@ -11,24 +11,22 @@ class AppTheme {
         brightness: Brightness.light,
       ),
 
-      // Font Family
       textTheme: GoogleFonts.interTextTheme(ThemeData.light().textTheme)
           .copyWith(
-            // App Name/Title
             displayLarge: GoogleFonts.inter(
               fontSize: 32,
               fontWeight: FontWeight.w700,
               color: AppColors.textPrimary,
               letterSpacing: -0.5,
             ),
-            // Tagline/Subtitle
+
             titleMedium: GoogleFonts.inter(
               fontSize: 16,
               fontWeight: FontWeight.w400,
               color: AppColors.textPrimary.withValues(alpha: 0.7),
               letterSpacing: 0.5,
             ),
-            // Version/Caption
+
             bodySmall: GoogleFonts.inter(
               fontSize: 14,
               fontWeight: FontWeight.w400,
@@ -40,11 +38,9 @@ class AppTheme {
             displayColor: AppColors.textPrimary,
           ),
 
-      // Primary Color
       primaryColor: AppColors.primary,
       scaffoldBackgroundColor: AppColors.white,
 
-      // Card Theme
       cardTheme: CardTheme(
         color: AppColors.white,
         shape: RoundedRectangleBorder(
@@ -54,7 +50,6 @@ class AppTheme {
         elevation: 0,
       ),
 
-      // Elevated Button Theme
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.selectedButton,
@@ -64,7 +59,6 @@ class AppTheme {
         ),
       ),
 
-      // App Bar Theme
       appBarTheme: AppBarTheme(
         backgroundColor: AppColors.white,
         foregroundColor: AppColors.textPrimary,
@@ -86,24 +80,22 @@ class AppTheme {
         brightness: Brightness.dark,
       ),
 
-      // Font Family
       textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme)
           .copyWith(
-            // App Name/Title
             displayLarge: GoogleFonts.inter(
               fontSize: 32,
               fontWeight: FontWeight.w700,
               color: AppColors.white,
               letterSpacing: -0.5,
             ),
-            // Tagline/Subtitle
+
             titleMedium: GoogleFonts.inter(
               fontSize: 16,
               fontWeight: FontWeight.w400,
               color: AppColors.white.withValues(alpha: 0.7),
               letterSpacing: 0.5,
             ),
-            // Version/Caption
+
             bodySmall: GoogleFonts.inter(
               fontSize: 14,
               fontWeight: FontWeight.w400,
@@ -112,11 +104,9 @@ class AppTheme {
           )
           .apply(bodyColor: AppColors.white, displayColor: AppColors.white),
 
-      // Primary Color
       primaryColor: AppColors.primary,
       scaffoldBackgroundColor: AppColors.selectedButton,
 
-      // Card Theme
       cardTheme: CardTheme(
         color: AppColors.selectedButton,
         shape: RoundedRectangleBorder(
@@ -126,7 +116,6 @@ class AppTheme {
         elevation: 0,
       ),
 
-      // Elevated Button Theme
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primary,
@@ -136,7 +125,6 @@ class AppTheme {
         ),
       ),
 
-      // App Bar Theme
       appBarTheme: AppBarTheme(
         backgroundColor: AppColors.selectedButton,
         foregroundColor: AppColors.white,

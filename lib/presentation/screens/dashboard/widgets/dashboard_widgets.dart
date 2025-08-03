@@ -7,3 +7,5 @@ export 'sports_category_list.dart';
 export 'profile_icon_widget.dart';
 export 'pro_player_card.dart';
 export 'subscribed_pro_section.dart';
+export 'featured_pro_section.dart';
+export 'featured_pro_card.dart';

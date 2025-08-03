@@ -19,7 +19,6 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
 
-    // Navigate to next screen after delay
     Future.delayed(const Duration(seconds: 3), () {
       if (mounted) {
         context.goNamed(Routes.dashboardScreen);
@@ -82,7 +81,6 @@ class _SplashScreenState extends State<SplashScreen> {
 
                     SizedBox(height: Sizes.dimen_24.h),
 
-                    // App Name
                     Text(
                       context.loc.appTitle,
                       style: Theme.of(context).textTheme.displayLarge,
@@ -90,7 +88,6 @@ class _SplashScreenState extends State<SplashScreen> {
 
                     SizedBox(height: Sizes.dimen_8.h),
 
-                    // Tagline
                     Text(
                       context.loc.appTagline,
                       style: Theme.of(context).textTheme.titleMedium,
@@ -100,7 +97,6 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
             ),
 
-            // Version at bottom
             Padding(
               padding: EdgeInsets.only(bottom: Sizes.dimen_40.h),
               child: Text(

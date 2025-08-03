@@ -65,8 +65,15 @@
   "@search": {
     "description": "Search placeholder text"
   },
+  "topOfTheWeek": "Top of the week",
+  "subscribed": "Subscribed",
   "subscribedPro": "Subscribed Pro",
   "@subscribedPro": {
     "description": "Title for subscribed pro players section"
-  }
+  },
+  "atpRanking": "ATP: ",
+  "rating": "Rating: ",
+  "hours": "hours",
+  "matchesPlayed": "Matches played",
+  "featuredPros": "Featured Pros"
 }
