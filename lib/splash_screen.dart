@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
+import 'package:pair_up/utils/constants/assets_constants.dart';
+import 'package:pair_up/utils/constants/size.dart';
+import 'package:pair_up/utils/extensions/locale_extension.dart';
+import 'presentation/routes/routes.dart';
 import 'presentation/themes/app_colors.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -16,8 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
     // Navigate to next screen after delay
     Future.delayed(const Duration(seconds: 3), () {
       if (mounted) {
-        // TODO: Navigate to your main screen here
-        // Example: context.go('/home');
+        context.goNamed(Routes.dashboardScreen);
       }
     });
   }
@@ -29,45 +34,44 @@ class _SplashScreenState extends State<SplashScreen> {
       body: SafeArea(
         child: Column(
           children: [
-            // Main content area with logo and app name
             Expanded(
               child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    // Logo
                     Container(
-                      width: 120,
-                      height: 120,
+                      width: Sizes.dimen_120.sp,
+                      height: Sizes.dimen_120.sp,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
+                        borderRadius: BorderRadius.circular(Sizes.dimen_20.r),
                         boxShadow: [
                           BoxShadow(
-                            color: AppColors.primary.withOpacity(0.2),
-                            blurRadius: 20,
-                            offset: const Offset(0, 10),
+                            color: AppColors.primary.withValues(alpha: 0.2),
+                            blurRadius: Sizes.dimen_20.sp,
+                            offset: Offset(0, 10.w),
                           ),
                         ],
                       ),
                       child: ClipRRect(
-                        borderRadius: BorderRadius.circular(20),
+                        borderRadius: BorderRadius.circular(Sizes.dimen_20.r),
                         child: Image.asset(
-                          'assets/app_logo.png',
-                          width: 120,
-                          height: 120,
+                          AssetsConstants.appLogo,
+                          width: Sizes.dimen_120.sp,
+                          height: Sizes.dimen_120.sp,
                           fit: BoxFit.cover,
                           errorBuilder: (context, error, stackTrace) {
-                            // Fallback if logo doesn't load
                             return Container(
-                              width: 120,
-                              height: 120,
+                              width: Sizes.dimen_120.sp,
+                              height: Sizes.dimen_120.sp,
                               decoration: BoxDecoration(
                                 color: AppColors.primary,
-                                borderRadius: BorderRadius.circular(20),
+                                borderRadius: BorderRadius.circular(
+                                  Sizes.dimen_20.r,
+                                ),
                               ),
-                              child: const Icon(
+                              child: Icon(
                                 Icons.people_alt_rounded,
-                                size: 60,
+                                size: Sizes.dimen_60.sp,
                                 color: AppColors.white,
                               ),
                             );
@@ -76,19 +80,19 @@ class _SplashScreenState extends State<SplashScreen> {
                       ),
                     ),
 
-                    const SizedBox(height: 24),
+                    SizedBox(height: Sizes.dimen_24.h),
 
                     // App Name
                     Text(
-                      'Pair Up',
+                      context.loc.appTitle,
                       style: Theme.of(context).textTheme.displayLarge,
                     ),
 
-                    const SizedBox(height: 8),
+                    SizedBox(height: Sizes.dimen_8.h),
 
                     // Tagline
                     Text(
-                      'Your Pro Training Partner',
+                      context.loc.appTagline,
                       style: Theme.of(context).textTheme.titleMedium,
                     ),
                   ],
@@ -98,9 +102,9 @@ class _SplashScreenState extends State<SplashScreen> {
 
             // Version at bottom
             Padding(
-              padding: const EdgeInsets.only(bottom: 40),
+              padding: EdgeInsets.only(bottom: Sizes.dimen_40.h),
               child: Text(
-                'Version 1.0.0',
+                context.loc.version('1.0.0'),
                 style: Theme.of(context).textTheme.bodySmall,
               ),
             ),

@@ -1,0 +1,84 @@
+class Sizes {
+  Sizes._();
+
+  static const double dimen_0 = 0;
+  static const double dimen_0_25 = 0.25;
+  static const double dimen_1 = 1.0;
+  static const double dimen_1_5 = 1.5;
+  static const double dimen_2 = 2.0;
+  static const double dimen_3 = 3.0;
+  static const double dimen_4 = 4.0;
+  static const double dimen_5 = 5.0;
+  static const double dimen_6 = 6.0;
+  static const double dimen_8 = 8.0;
+  static const double dimen_9 = 9.0;
+  static const double dimen_10 = 10.0;
+  static const double dimen_11 = 11.0;
+  static const double dimen_12 = 12.0;
+  static const double dimen_14 = 14.0;
+  static const double dimen_15 = 15.0;
+  static const double dimen_16 = 16.0;
+  static const double dimen_17 = 17.0;
+  static const double dimen_18 = 18.0;
+  static const double dimen_20 = 20.0;
+  static const double dimen_24 = 24.0;
+  static const double dimen_25 = 25.0;
+  static const double dimen_26 = 26.0;
+  static const double dimen_28 = 28.0;
+  static const double dimen_30 = 30.0;
+  static const double dimen_32 = 32.0;
+  static const double dimen_34 = 34.0;
+  static const double dimen_35 = 35.0;
+  static const double dimen_36 = 36.0;
+  static const double dimen_40 = 40.0;
+  static const double dimen_42 = 42.0;
+  static const double dimen_44 = 44.0;
+  static const double dimen_45 = 45.0;
+  static const double dimen_46 = 46.0;
+  static const double dimen_48 = 48.0;
+  static const double dimen_50 = 50.0;
+  static const double dimen_51 = 51.0;
+  static const double dimen_60 = 60.0;
+  static const double dimen_64 = 64.0;
+  static const double dimen_66 = 66.0;
+  static const double dimen_70 = 70.0;
+  static const double dimen_77 = 77.0;
+  static const double dimen_80 = 80.0;
+  static const double dimen_84 = 84.0;
+  static const double dimen_85 = 85.0;
+  static const double dimen_96 = 96.0;
+  static const double dimen_100 = 100.0;
+  static const double dimen_108 = 108.0;
+  static const double dimen_110 = 110.0;
+  static const double dimen_120 = 120.0;
+  static const double dimen_125 = 125.0;
+  static const double dimen_127 = 127.0;
+  static const double dimen_140 = 140.0;
+  static const double dimen_142 = 142.0;
+  static const double dimen_150 = 150.0;
+  static const double dimen_160 = 160.0;
+  static const double dimen_170 = 170.0;
+  static const double dimen_180 = 180.0;
+  static const double dimen_200 = 200.0;
+  static const double dimen_220 = 220.0;
+  static const double dimen_254 = 254.0;
+  static const double dimen_250 = 250.0;
+  static const double dimen_260 = 260.0;
+  static const double dimen_300 = 300.0;
+  static const double dimen_337 = 337.0;
+  static const double dimen_350 = 350.0;
+  static const double dimen_392 = 392.0;
+  static const double dimen_400 = 400.0;
+  static const double dimen_500 = 500.0;
+  static const double dimen_600 = 600.0;
+
+  /// Design Screen Resolution Width
+  static const double dimen_375 = 375.0;
+  static const double dimen_402 = 402.0;
+  static const double dimen_1920 = 1920.0;
+
+  /// Design Screen Resolution Height
+  static const double dimen_667 = 667.0;
+  static const double dimen_874 = 874.0;
+  static const double dimen_1080 = 1080.0;
+}

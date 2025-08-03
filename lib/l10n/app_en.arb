@@ -1,0 +1,48 @@
+{
+  "appTitle": "Pair Up",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "appTagline": "Your Pro Training Partner",
+  "@appTagline": {
+    "description": "The tagline of the application"
+  },
+  "selectAPro": "Select a Pro",
+  "@selectAPro": {
+    "description": "Header title for selecting a professional player"
+  },
+  "chooseYourDesiredPro": "Choose your desired pro!",
+  "@chooseYourDesiredPro": {
+    "description": "Subtitle for pro selection"
+  },
+  "version": "Version {versionNumber}",
+  "@version": {
+    "description": "Version text with placeholder",
+    "placeholders": {
+      "versionNumber": {
+        "type": "String",
+        "example": "1.0.0"
+      }
+    }
+  },
+  "notifications": "Notifications",
+  "@notifications": {
+    "description": "Notifications label"
+  },
+  "profile": "Profile",
+  "@profile": {
+    "description": "Profile label"
+  },
+  "trainWithProPlayers": "Train with Pro Players",
+  "@trainWithProPlayers": {
+    "description": "Training tagline"
+  },
+  "connectMatchPair": "Connect. Match. Pair.",
+  "@connectMatchPair": {
+    "description": "Alternative tagline"
+  },
+  "learnFromTheBest": "Learn from the Best",
+  "@learnFromTheBest": {
+    "description": "Alternative tagline"
+  }
+}

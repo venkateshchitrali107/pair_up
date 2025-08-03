@@ -25,14 +25,14 @@ class AppTheme {
             titleMedium: GoogleFonts.inter(
               fontSize: 16,
               fontWeight: FontWeight.w400,
-              color: AppColors.textPrimary.withOpacity(0.7),
+              color: AppColors.textPrimary.withValues(alpha: 0.7),
               letterSpacing: 0.5,
             ),
             // Version/Caption
             bodySmall: GoogleFonts.inter(
               fontSize: 14,
               fontWeight: FontWeight.w400,
-              color: AppColors.textPrimary.withOpacity(0.5),
+              color: AppColors.textPrimary.withValues(alpha: 0.5),
             ),
           )
           .apply(
@@ -100,14 +100,14 @@ class AppTheme {
             titleMedium: GoogleFonts.inter(
               fontSize: 16,
               fontWeight: FontWeight.w400,
-              color: AppColors.white.withOpacity(0.7),
+              color: AppColors.white.withValues(alpha: 0.7),
               letterSpacing: 0.5,
             ),
             // Version/Caption
             bodySmall: GoogleFonts.inter(
               fontSize: 14,
               fontWeight: FontWeight.w400,
-              color: AppColors.white.withOpacity(0.5),
+              color: AppColors.white.withValues(alpha: 0.5),
             ),
           )
           .apply(bodyColor: AppColors.white, displayColor: AppColors.white),
