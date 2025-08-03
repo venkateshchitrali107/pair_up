@@ -16,6 +16,7 @@ class DashboardScreen extends StatefulWidget {
 
 class _DashboardScreenState extends State<DashboardScreen> {
   int selectedChipIndex = 0;
+  TabItem selectedTab = TabItem.home;
 
   void _onCategorySelected(int index) {
     setState(() {
@@ -26,51 +27,66 @@ class _DashboardScreenState extends State<DashboardScreen> {
     debugPrint('Selected category: ${selectedCategory.type}');
   }
 
+  void _onTabSelected(TabItem tab) {
+    setState(() {
+      selectedTab = tab;
+    });
+    debugPrint('Selected tab: $tab');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.white,
       body: SafeArea(
-        child: SingleChildScrollView(
-          padding: EdgeInsets.all(Sizes.dimen_16.h),
-          child: Column(
-            children: [
-              const DashboardAppHeader(),
-              SizedBox(height: Sizes.dimen_8.h),
-              CategoryAndSearchSection(
-                selectedCategoryIndex: selectedChipIndex,
-                onCategorySelected: _onCategorySelected,
+        child: Column(
+          children: [
+            Expanded(
+              child: SingleChildScrollView(
+                padding: EdgeInsets.all(Sizes.dimen_16.h),
+                child: Column(
+                  children: [
+                    const DashboardAppHeader(),
+                    SizedBox(height: Sizes.dimen_8.h),
+                    CategoryAndSearchSection(
+                      selectedCategoryIndex: selectedChipIndex,
+                      onCategorySelected: _onCategorySelected,
+                    ),
+                    SizedBox(height: Sizes.dimen_8.h),
+
+                    SubscribedProSection(
+                      subscribedPlayers: ProPlayer.mockPlayers,
+                      onSeeAllTap: () {
+                        debugPrint('See all subscribed pros tapped');
+                      },
+                    ),
+
+                    SizedBox(height: Sizes.dimen_8.h),
+
+                    FeaturedProSection(
+                      featuredPlayers: ProPlayer.mockPlayers.take(6).toList(),
+                      onSeeAllTap: () {
+                        debugPrint('See all featured pros tapped');
+                      },
+                    ),
+
+                    SizedBox(height: Sizes.dimen_8.h),
+
+                    AllProsSection(
+                      allPlayers: ProPlayer.mockPlayers,
+                      onSeeAllTap: () {
+                        debugPrint('See all pros tapped');
+                      },
+                    ),
+                  ],
+                ),
               ),
-              SizedBox(height: Sizes.dimen_8.h),
-
-              SubscribedProSection(
-                subscribedPlayers: ProPlayer.mockPlayers,
-                onSeeAllTap: () {
-                  debugPrint('See all subscribed pros tapped');
-                },
-              ),
-
-              SizedBox(height: Sizes.dimen_8.h),
-
-              FeaturedProSection(
-                featuredPlayers: ProPlayer.mockPlayers.take(6).toList(),
-                onSeeAllTap: () {
-                  debugPrint('See all featured pros tapped');
-                },
-              ),
-
-              SizedBox(height: Sizes.dimen_8.h),
-
-              AllProsSection(
-                allPlayers: ProPlayer.mockPlayers,
-                onSeeAllTap: () {
-                  debugPrint('See all pros tapped');
-                },
-              ),
-
-              SizedBox(height: Sizes.dimen_16.h),
-            ],
-          ),
+            ),
+            CustomTabBar(
+              selectedTab: selectedTab,
+              onTabSelected: _onTabSelected,
+            ),
+          ],
         ),
       ),
     );

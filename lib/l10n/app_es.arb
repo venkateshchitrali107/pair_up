@@ -22,5 +22,21 @@
   "hours": "horas",
   "matchesPlayed": "Partidos jugados",
   "featuredPros": "Pros Destacados",
-  "allPros": "Todos los Pros"
+  "allPros": "Todos los Pros",
+  "schedule": "Horario",
+  "nearby": "Cerca",
+  "profile": "Perfil",
+   "tennis": "Tenis",
+  "badminton": "Bádminton",
+  "tableTennis": "Tenis de Mesa",
+  "viewRecording": "Ver Grabación",
+  "search": "Buscar",
+  "subscribedPro": "Pro Suscrito",
+  "featuredPros": "Pros Destacados",
+  "allPros": "Todos los Pros",
+  "tabTennis": "Tenis",
+  "tabPairUp": "Emparejar",
+  "tabCup": "Copa",
+  "tabEvents": "Eventos",
+  "tabRevote": "Revotar"
 }

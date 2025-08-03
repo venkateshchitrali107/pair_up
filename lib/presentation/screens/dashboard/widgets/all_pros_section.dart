@@ -35,43 +35,40 @@ class AllProsSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: Sizes.dimen_16.w),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                context.loc.allPros,
-                style: Theme.of(context).textTheme.headlineLarge?.copyWith(
-                  fontWeight: FontWeight.w700,
-                  fontSize: 16.sp,
-                  color: AppColors.textPrimary,
-                ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              context.loc.allPros,
+              style: Theme.of(context).textTheme.headlineLarge?.copyWith(
+                fontWeight: FontWeight.w700,
+                fontSize: 16.sp,
+                color: AppColors.textPrimary,
               ),
-              GestureDetector(
-                onTap: onSeeAllTap,
-                child: Container(
-                  width: Sizes.dimen_44.w,
-                  height: Sizes.dimen_44.w,
-                  decoration: BoxDecoration(
-                    border: Border.all(color: AppColors.cardBorder, width: 0.5),
-                    borderRadius: BorderRadius.circular(Sizes.dimen_20.r),
-                  ),
-                  child: Center(
-                    child: SvgPicture.asset(
-                      AssetsConstants.arrowRightUp,
-                      width: Sizes.dimen_20.sp,
-                      height: Sizes.dimen_20.sp,
-                      colorFilter: ColorFilter.mode(
-                        AppColors.primary,
-                        BlendMode.srcIn,
-                      ),
+            ),
+            GestureDetector(
+              onTap: onSeeAllTap,
+              child: Container(
+                width: Sizes.dimen_44.w,
+                height: Sizes.dimen_44.w,
+                decoration: BoxDecoration(
+                  border: Border.all(color: AppColors.cardBorder, width: 0.5),
+                  borderRadius: BorderRadius.circular(Sizes.dimen_20.r),
+                ),
+                child: Center(
+                  child: SvgPicture.asset(
+                    AssetsConstants.arrowRightUp,
+                    width: Sizes.dimen_20.sp,
+                    height: Sizes.dimen_20.sp,
+                    colorFilter: ColorFilter.mode(
+                      AppColors.primary,
+                      BlendMode.srcIn,
                     ),
                   ),
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
 
         SizedBox(height: Sizes.dimen_8.h),

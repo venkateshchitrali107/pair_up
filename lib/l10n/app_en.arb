@@ -76,5 +76,21 @@
   "hours": "hours",
   "matchesPlayed": "Matches played",
   "featuredPros": "Featured Pros",
-  "allPros": "All Pros"
+  "allPros": "All Pros",
+  "schedule": "Schedule",
+  "nearby": "Nearby",
+  "profile": "Profile",
+    "tennis": "Tennis",
+  "badminton": "Badminton",
+  "tableTennis": "Table Tennis",
+  "viewRecording": "View Recording",
+  "search": "Search",
+  "subscribedPro": "Subscribed Pro",
+  "featuredPros": "Featured Pros",
+  "allPros": "All Pros",
+  "tabTennis": "Tennis",
+  "tabPairUp": "Pair Up",
+  "tabCup": "Cup",
+  "tabEvents": "Events",
+  "tabRevote": "Revote"
 }

@@ -29,4 +29,5 @@ class AssetsConstants {
   static const String star = 'assets/icons/star.svg';
   static const String starPng = 'assets/icons/star.png';
   static const String cameraSquare = 'assets/icons/camera_square.svg';
+  static const String match = 'assets/icons/pairup.svg';
 }

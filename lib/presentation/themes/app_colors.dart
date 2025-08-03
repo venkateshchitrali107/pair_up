@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   static const Color primary = Color(0xFFF74404);
+  static const Color primaryLight = Color(0x1AF74404); // 10% opacity of primary
 
   static const Color selectedButton = Color(0xFF111E26);
   static const Color textPrimary = Color(0xFF111E26);

@@ -10,3 +10,4 @@ export 'subscribed_pro_section.dart';
 export 'featured_pro_section.dart';
 export 'featured_pro_card.dart';
 export 'all_pros_section.dart';
+export 'custom_tab_bar.dart';

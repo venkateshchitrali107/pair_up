@@ -26,7 +26,7 @@ class DashboardAppHeader extends StatelessWidget {
                   color: AppColors.textPrimary,
                 ),
               ),
-              SizedBox(height: Sizes.dimen_8.h),
+              SizedBox(height: Sizes.dimen_4.h),
               Text(
                 context.loc.chooseYourDesiredPro,
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
