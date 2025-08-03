@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:pair_up/presentation/screens/detail/widgets/detail_header.dart';
 
 import '../../../utils/constants/size.dart';
 import '../../themes/app_colors.dart';
+import 'widgets/detail_header.dart';
 import 'widgets/play_type_header.dart';
+import 'widgets/players_section.dart';
 import 'widgets/sports_header.dart';
 
 class DetailScreen extends StatefulWidget {
@@ -24,14 +25,16 @@ class _State extends State<DetailScreen> {
           children: [
             Expanded(
               child: SingleChildScrollView(
-                padding: EdgeInsets.all(Sizes.dimen_16.h),
+                padding: EdgeInsets.all(Sizes.dimen_12.w),
                 child: Column(
                   children: [
                     const DetailHeader(),
-                    SizedBox(height: Sizes.dimen_24.h),
+                    SizedBox(height: Sizes.dimen_12.h),
                     const SportsHeader(),
-                    SizedBox(height: Sizes.dimen_24.h),
+                    SizedBox(height: Sizes.dimen_12.h),
                     const PlayTypeHeader(),
+                    SizedBox(height: Sizes.dimen_12.h),
+                    const PlayersSection(),
                   ],
                 ),
               ),
